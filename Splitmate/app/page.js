@@ -152,7 +152,7 @@ return(
     </section>
 
     <footer className="border-t bg-gray-50 py-12 text-center text-sm text-muted-foreground">
-        Made by Rohit Khandagale
+        Made by Rohit K
     </footer>
 </div>
 );
