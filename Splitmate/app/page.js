@@ -53,7 +53,7 @@ return(
         <div className ="container mx-auto max-w-5xl overflow-hidden rounded-xl shadow-xl">
             <div className="gradient p-1 aspect-[16/9]">
                 <Image 
-                src="/hero.png"
+                src="/Splitmate_poster.png"
                 width={1280}
                 height={720}
                 alt="Banner"
@@ -62,9 +62,9 @@ return(
                 />
             </div>
         </div>
-    </section>
+ </section>   
 
-    <section>
+    
         <section id="features" className="bg-gray-50 py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <Badge variant="outline" className="bg-green-100 text-green-700">Features</Badge>
@@ -93,12 +93,12 @@ return(
             </div>
             </div>
         </section>
-    </section>
+   
 
 
 
 
-    <section>
+    
         <section id="how-it-works" className="py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <Badge variant="outline" className="bg-green-100 text-green-700">How it Works</Badge>
@@ -111,8 +111,8 @@ return(
             </p>
 
             <div className="mx-auto mt-12 grid max-w-5xl gap-8  lg:grid-cols-3">
-                {STEPS.map(({description,label,title})=>(
-                 <div className="flex flex-col items-center space-y-4">
+                {STEPS.map(({label,title,description})=>(
+                 <div key={label} className="flex flex-col items-center space-y-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-xl font-bold text-green-600">
                         {label}
                     </div>
@@ -125,7 +125,7 @@ return(
 
             </div>
         </section>
-    </section>
+   
 
     <section className="py-20 gradient ">
         <div className="container mx-auto px-4 md:px-6 text-center space-y-6">
@@ -152,7 +152,7 @@ return(
     </section>
 
     <footer className="border-t bg-gray-50 py-12 text-center text-sm text-muted-foreground">
-        Made by Rohit K
+        © {new Date().getFullYear()} Splitmate. All rights reserved.
     </footer>
 </div>
 );

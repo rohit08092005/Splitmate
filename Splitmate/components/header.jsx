@@ -19,7 +19,7 @@ const Header =() =>{
         <nav className=" ml-4 mr-2 mx-auto h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
             <Image
-            src={"/logos/logo2.png"}
+            src={"/logos/logo (4).png"}
             alt="Splitr Logo"
             width={200}
             height={60}
